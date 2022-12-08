@@ -5,20 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>checkpoint3</title>
+        <link rel="stylesheet" href="./style.css">
+       
     </head>
     <body>
-        <header id="TopOfThePage">
+        <header id="nav">
       <!-- semantic tags -->
       <nav>
         <!-- affichage de liste non ordonnée-->
         <ul type="square">
-          <li>About</li>s
+          <li>About</li>
           <li>work</li>
           <li>home</li>
-          <li>navbar</li>
           <li>resume</li>
           <li>contact</li>
         </ul>
+         <!-- affichage de liste ordonnée-->
+         <ol type="I">
+            <!-- Nested tags-->
+            <li><a target="_blank" href="./Pages/About.html">about</a></li>
+            <li><a target="_blank" href="./Pages/Profile.html">work</a></li>
+            <li><a target="_blank" href="./Pages/Contact.html">home</a></li>
+            <li><a target="_blank" href="./Pages/Profile.html">resume</a></li>
+            <li><a target="_blank" href="./Pages/Contact.html">contact</a></li>
+          </ol>
       </nav>
        <!-- link using a tag ==> URL-->
        <a
@@ -27,20 +37,26 @@
        LIEN</a>
         </header>
       <main>
+        <section id="About" > 
+            <h2>About</h2>
+            <p>I'm Ameni I'm a doctor on biologie</p> 
+            <p>Les savoir-être professionnels sont devenus aujourd’hui très importants pour les recruteurs, et leur prise en compte s’est généralisée dans toutes les étapes du recrutement. Il est donc primordial pour vous de les identifier et de les valoriser dans votre candidature.</p>
+            
+
+            
+        </section>
         <section>
             <!--audio tag-->
             <audio controls>
-                <source src="horse.ogg" type="audio/o$g">
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
             </audio>
             <!--video tag-->
-            <video controls>
-                <vedio src="https://youtu.be/9F49XgzlZgA" type="video/mp4">
-            </video>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9F49XgzlZgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
       </main>
       <footer>
         <h5>@copyrights AERO BLUE CAVALIER - 2022</h5>
-        <h6><a href="#TopOfThePage">GO TO THE TOP</a></h6>
+        <h6><a href="#nav">GO TO THE TOP</a></h6>
     </footer>
     </body>
 </html>
